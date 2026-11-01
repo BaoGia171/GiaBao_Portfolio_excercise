@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    /* color */
+    --color-white: white;
+    /* background-color */
+    --background-red: red;
+    --background-blue: blue;
+    --background-aqua: aqua;
+}
+body {
+    background-image: url("./assets/img/bg_3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: var(--color-white);
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+label {
+    display: block;
+}
+
+.container_form {
+    background-image: url(https://wallpapercave.com/wp/wp6438851.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    padding: 50px;
+    width: 500px;
+    height: auto;
+    border-radius: 70px 0px 70px 0px;
+}
+a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+.form_email input {
+    border-radius: 15px;
+    padding-left: 15px;
+    width: 100%;
+    height: 30px;
+    border: none;
+}
+.form_password input {
+    border-radius: 15px;
+    padding-left: 15px;
+    width: 100%;
+    height: 30px;
+    border: none;
+}
+.form_password {
+    margin: 20px 0px 10px 0px;
+}
+label {
+    font-size: 10px;
+    margin-bottom: 8px;
+}
+.form_button_login button {
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+    color: var(--color-white);
+    background-color: var(--background-red);
+}
+/* .container_signin{
+    padding-top: 150px;
+} */
+.form_title_text {
+    padding-bottom: 30px;
+}
+.form_checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.form_checkbox_remember {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+p {
+    font-size: 10px;
+}
+.form_orther_login button {
+    border-radius: 50%;
+    width: 35px;
+    border: none;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form_orther_login .form_other_login_list button:first-child {
+    background-color: var(--background-blue);
+}
+.form_orther_login .form_other_login_list button:nth-child(2) {
+    background-color: var(--background-aqua);
+}
+.form_orther_login .form_other_login_list button:nth-child(3) {
+    background-color: var(--background-red);
+}
+.form_orther_login .form_other_login_list button:nth-child(4) {
+    background-color: var(--background-blue);
+}
+
+.form_other_login_list {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.form_orther_login {
+    margin: 10px 0px 20px 0px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+/***************** reponsive ****************/
+
+body {
+    height: auto;
+    min-height: 100vh;
+    padding: 30px 20px;
+}
+.container_signin {
+    width: 100%;
+    max-width: 500px;
+}
+.container_form {
+    width: 100%;
+}
+
+/* Tablet: tu 768px den duoi 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container_form {
+        padding: 40px;
+    }
+    .form_email input,
+    .form_password input,
+    .form_button_login button {
+        height: 40px;
+    }
+    label,
+    p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 24px 16px;
+    }
+    .container_form {
+        padding: 30px 24px;
+        border-radius: 40px 0 40px 0;
+    }
+    .form_title_text h1 {
+        font-size: 28px;
+    }
+    label,
+    p {
+        font-size: 12px;
+    }
+    .form_email input,
+    .form_password input {
+        height: 44px;
+        font-size: 16px;
+    }
+    .form_button_login button {
+        height: 44px;
+        font-size: 16px;
+    }
+    .form_orther_login {
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 0;
+    }
+    .form_other_login_list {
+        gap: 12px;
+    }
+    .form_orther_login button {
+        width: 40px;
+        height: 40px;
+    }
+}

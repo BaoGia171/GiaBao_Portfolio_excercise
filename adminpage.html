@@ -1,0 +1,762 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./adminpage.css" />
+        <title>Admin | Gia Bảo Portfolio</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="admin_header">
+            <a class="brand" href="index.html">Gia Bảo</a>
+        </header>
+        <div class="admin_layout">
+            <!-- Menu quản lý bên trái -->
+            <aside class="sidebar">
+                <div class="account">
+                    <img src="assets/img/doraemon.png" alt="Doraemon profile" />
+                    <div>
+                        <strong>Bảo Developer</strong>
+                        <p>Portfolio admin</p>
+                    </div>
+                </div>
+                <p class="menu_label">MANAGE CONTENT</p>
+                <nav aria-label="Content sections">
+                    <a href="#home"><span>01</span>Home</a>
+                    <a href="#about"><span>02</span>About</a>
+                    <a href="#skills"><span>03</span>Skills</a>
+                    <a href="#project"><span>04</span>Project</a>
+                    <a href="#contact"><span>05</span>Contact</a>
+                </nav>
+            </aside>
+            <!-- Menu quản lý bên trái -->
+            <main>
+                <div class="welcome">
+                    <div>
+                        <p class="section_label">GIA BẢO PORTFOLIO</p>
+                        <h1>Manage your portfolio<span>.</span></h1>
+                    </div>
+                </div>
+                <!------------- Home ---------------->
+                <section class="content_section" id="home">
+                    <div class="section_heading">
+                        <div>
+                            <p class="section_label">WEBSITE CONTENT</p>
+                            <h2>Home introduction</h2>
+                        </div>
+                    </div>
+                    <form class="card">
+                        <div class="editor_columns">
+                            <div>
+                                <div class="field">
+                                    <label for="home-name">Display name</label>
+                                    <input
+                                        id="home-name"
+                                        type="text"
+                                        value="Bảo"
+                                    />
+                                </div>
+                                <div class="field">
+                                    <label for="home-greeting">Greeting</label>
+                                    <input
+                                        id="home-greeting"
+                                        type="text"
+                                        value="Hi,"
+                                    />
+                                </div>
+                                <div class="field">
+                                    <label for="home-role">Job title</label>
+                                    <input
+                                        id="home-role"
+                                        type="text"
+                                        value="Front-End Developer"
+                                    />
+                                </div>
+                                <div class="field">
+                                    <label for="home-button"
+                                        >Contact button text</label
+                                    >
+                                    <input
+                                        id="home-button"
+                                        type="text"
+                                        value="Contact"
+                                    />
+                                </div>
+                            </div>
+                            <div class="image_editor">
+                                <div class="avatar_preview">
+                                    <img
+                                        src="./assets/img/Stoic Doraemon Sticker Cutout.png"
+                                        alt="Current Doraemon avatar"
+                                    />
+                                </div>
+                                <div class="field">
+                                    <label for="home-image"
+                                        >Choose a new image</label
+                                    ><input
+                                        id="home-image"
+                                        type="file"
+                                        accept="image/png,image/jpeg,image/webp"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_actions">
+                            <button class="button" type="button">
+                                Save changes</button
+                            ><button class="button button_light" type="reset">
+                                Reset form
+                            </button>
+                        </div>
+                    </form>
+                </section>
+                <!------------- Home ---------------->
+                <!------------- About ---------------->
+                <section class="content_section" id="about">
+                    <div class="section_heading">
+                        <div>
+                            <p class="section_label">WEBSITE CONTENT</p>
+                            <h2>About me</h2>
+                        </div>
+                    </div>
+                    <form class="card">
+                        <div class="editor_columns">
+                            <div>
+                                <div class="field">
+                                    <label for="about-title">Heading</label>
+                                    <input
+                                        id="about-title"
+                                        type="text"
+                                        value="I&#x27;m Bảo"
+                                    />
+                                </div>
+                                <div class="field">
+                                    <label for="about-description"
+                                        >About description</label
+                                    >
+                                    <textarea id="about-description" rows="6">
+I am an Information Technology student at Ho Chi Minh City University of Transport, with a strong passion for programming and web development. I enjoy designing and building modern, responsive, and user-friendly web interfaces that provide practical solutions to real-world problems. I am particularly interested in Front-End Development, where I can combine logical thinking and creativity to create engaging user experiences. I am always eager to learn new technologies, improve my coding skills, and apply my knowledge to real-world projects. My goal is to become a professional Front-End Developer and contribute to building high-quality web applications that deliver value to users.</textarea
+                                    >
+                                </div>
+                            </div>
+                            <div class="image_editor">
+                                <img
+                                    class="about_preview"
+                                    src="assets/img/doraemon.png"
+                                    alt="Current About image"
+                                />
+                                <div class="field">
+                                    <label for="about-image"
+                                        >Choose a new image</label
+                                    ><input
+                                        id="about-image"
+                                        type="file"
+                                        accept="image/png,image/jpeg,image/webp"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_actions">
+                            <button class="button" type="button">
+                                Save changes</button
+                            ><button class="button button_light" type="reset">
+                                Reset form
+                            </button>
+                        </div>
+                    </form>
+                </section>
+                <!------------- About ---------------->
+                <!------------- Skills ---------------->
+
+                <section class="content_section" id="skills">
+                    <div class="section_heading">
+                        <div>
+                            <p class="section_label">WEBSITE CONTENT</p>
+                            <h2>Professional skills</h2>
+                        </div>
+                    </div>
+                    <form class="card">
+                        <div class="field">
+                            <label for="skills-title">Heading</label>
+                            <input
+                                id="skills-title"
+                                type="text"
+                                value="Profesional Skills"
+                            />
+                        </div>
+                        <div class="field">
+                            <label for="skills-description"
+                                >Skills description</label
+                            >
+                            <textarea id="skills-description" rows="6">
+I have strong problem-solving skills, a creative mindset, and a passion for continuous learning. With a foundation in HTML, CSS, and JavaScript, I strive to build modern, responsive, and user-friendly web applications while continuously improving my technical skills.</textarea
+                            >
+                        </div>
+                        <div class="skills_grid">
+                            <div class="field">
+                                <label for="skill-1">Skill 1</label>
+                                <input id="skill-1" type="text" value="HTML" />
+                            </div>
+                            <div class="field">
+                                <label for="skill-2">Skill 2</label>
+                                <input id="skill-2" type="text" value="CSS" />
+                            </div>
+                            <div class="field">
+                                <label for="skill-3">Skill 3</label>
+                                <input
+                                    id="skill-3"
+                                    type="text"
+                                    value="JavaScript"
+                                />
+                            </div>
+                            <div class="field">
+                                <label for="skill-4">Skill 4</label>
+                                <input
+                                    id="skill-4"
+                                    type="text"
+                                    value="React.js"
+                                />
+                            </div>
+                            <div class="field">
+                                <label for="skill-5">Skill 5</label>
+                                <input
+                                    id="skill-5"
+                                    type="text"
+                                    value="Tailwind-CSS"
+                                />
+                            </div>
+                            <div class="field">
+                                <label for="skill-6">Skill 6</label>
+                                <input
+                                    id="skill-6"
+                                    type="text"
+                                    value="TypeScript"
+                                />
+                            </div>
+                        </div>
+                        <div class="skills_image">
+                            <img
+                                src="assets/img/work3.jpg"
+                                alt="Current Skills illustration"
+                            />
+                            <div class="field">
+                                <label for="skills-image"
+                                    >Choose a new image</label
+                                ><input
+                                    id="skills-image"
+                                    type="file"
+                                    accept="image/png,image/jpeg,image/webp"
+                                />
+                            </div>
+                        </div>
+                        <div class="form_actions">
+                            <button class="button" type="button">
+                                Save changes</button
+                            ><button class="button button_light" type="reset">
+                                Reset form
+                            </button>
+                        </div>
+                    </form>
+                </section>
+                <!------------- Skills ---------------->
+
+                <!------------- Project ---------------->
+                <section class="content_section" id="project">
+                    <div class="section_heading">
+                        <div>
+                            <p class="section_label">WEBSITE CONTENT</p>
+                            <h2>Personal projects</h2>
+                        </div>
+                    </div>
+                    <div class="project_grid">
+                        <article class="project_card">
+                            <img
+                                src="assets/img/project1.png"
+                                alt="orfarm project preview"
+                            />
+                            <div class="project_info">
+                                <span class="project_number">PROJECT 01</span>
+                                <h3>Orfarm</h3>
+                            </div>
+                            <details>
+                                <summary>Edit project</summary>
+                                <form>
+                                    <div class="field">
+                                        <label for="project-name-1"
+                                            >Image label</label
+                                        >
+                                        <input
+                                            id="project-name-1"
+                                            type="text"
+                                            value="orfarm"
+                                        />
+                                    </div>
+                                    <div class="field">
+                                        <label for="project-link-1"
+                                            >GitHub link</label
+                                        >
+                                        <input
+                                            id="project-link-1"
+                                            type="url"
+                                            value="https://github.com/BaoGia171/orfarm"
+                                        />
+                                    </div>
+                                    <div class="field">
+                                        <label for="project-image-1"
+                                            >Choose a new image</label
+                                        ><input
+                                            id="project-image-1"
+                                            type="file"
+                                            accept="image/png,image/jpeg,image/webp"
+                                        />
+                                    </div>
+                                    <label class="check"
+                                        ><input type="checkbox" checked /> Show
+                                        on portfolio</label
+                                    >
+                                    <div class="form_actions">
+                                        <button class="button" type="button">
+                                            Save changes</button
+                                        ><button
+                                            class="button button_light"
+                                            type="reset"
+                                        >
+                                            Reset form
+                                        </button>
+                                    </div>
+                                    <button class="delete_button" type="button">
+                                        Delete project
+                                    </button>
+                                </form>
+                            </details>
+                        </article>
+                        <article class="project_card">
+                            <img
+                                src="assets/img/project2.png"
+                                alt="flacio project preview"
+                            />
+                            <div class="project_info">
+                                <span class="project_number">PROJECT 02</span>
+                                <h3>Flacio</h3>
+                            </div>
+                            <details>
+                                <summary>Edit project</summary>
+                                <form>
+                                    <div class="field">
+                                        <label for="project-name-2"
+                                            >Image label</label
+                                        >
+                                        <input
+                                            id="project-name-2"
+                                            type="text"
+                                            value="flacio"
+                                        />
+                                    </div>
+                                    <div class="field">
+                                        <label for="project-link-2"
+                                            >GitHub link</label
+                                        >
+                                        <input
+                                            id="project-link-2"
+                                            type="url"
+                                            value="https://github.com/BaoGia171/flacio"
+                                        />
+                                    </div>
+                                    <div class="field">
+                                        <label for="project-image-2"
+                                            >Choose a new image</label
+                                        ><input
+                                            id="project-image-2"
+                                            type="file"
+                                            accept="image/png,image/jpeg,image/webp"
+                                        />
+                                    </div>
+                                    <label class="check"
+                                        ><input type="checkbox" checked /> Show
+                                        on portfolio</label
+                                    >
+                                    <div class="form_actions">
+                                        <button class="button" type="button">
+                                            Save changes</button
+                                        ><button
+                                            class="button button_light"
+                                            type="reset"
+                                        >
+                                            Reset form
+                                        </button>
+                                    </div>
+                                    <button class="delete_button" type="button">
+                                        Delete project
+                                    </button>
+                                </form>
+                            </details>
+                        </article>
+                        <article class="project_card">
+                            <img
+                                src="assets/img/project3.png"
+                                alt="delici project preview"
+                            />
+                            <div class="project_info">
+                                <span class="project_number">PROJECT 03</span>
+                                <h3>Delici</h3>
+                            </div>
+                            <details>
+                                <summary>Edit project</summary>
+                                <form>
+                                    <div class="field">
+                                        <label for="project-name-3"
+                                            >Image label</label
+                                        >
+                                        <input
+                                            id="project-name-3"
+                                            type="text"
+                                            value="delici"
+                                        />
+                                    </div>
+                                    <div class="field">
+                                        <label for="project-link-3"
+                                            >GitHub link</label
+                                        >
+                                        <input
+                                            id="project-link-3"
+                                            type="url"
+                                            value="https://github.com/BaoGia171/delici"
+                                        />
+                                    </div>
+                                    <div class="field">
+                                        <label for="project-image-3"
+                                            >Choose a new image</label
+                                        ><input
+                                            id="project-image-3"
+                                            type="file"
+                                            accept="image/png,image/jpeg,image/webp"
+                                        />
+                                    </div>
+                                    <label class="check"
+                                        ><input type="checkbox" checked /> Show
+                                        on portfolio</label
+                                    >
+                                    <div class="form_actions">
+                                        <button class="button" type="button">
+                                            Save changes</button
+                                        ><button
+                                            class="button button_light"
+                                            type="reset"
+                                        >
+                                            Reset form
+                                        </button>
+                                    </div>
+                                    <button class="delete_button" type="button">
+                                        Delete project
+                                    </button>
+                                </form>
+                            </details>
+                        </article>
+                        <article class="project_card">
+                            <img
+                                src="assets/img/project2.png"
+                                alt="flacio project preview"
+                            />
+                            <div class="project_info">
+                                <span class="project_number">PROJECT 04</span>
+                                <h3>Flacio</h3>
+                            </div>
+                            <details>
+                                <summary>Edit project</summary>
+                                <form>
+                                    <div class="field">
+                                        <label for="project-name-4"
+                                            >Image label</label
+                                        >
+                                        <input
+                                            id="project-name-4"
+                                            type="text"
+                                            value="flacio"
+                                        />
+                                    </div>
+                                    <div class="field">
+                                        <label for="project-link-4"
+                                            >GitHub link</label
+                                        >
+                                        <input
+                                            id="project-link-4"
+                                            type="url"
+                                            value="https://github.com/BaoGia171/flacio"
+                                        />
+                                    </div>
+                                    <div class="field">
+                                        <label for="project-image-4"
+                                            >Choose a new image</label
+                                        ><input
+                                            id="project-image-4"
+                                            type="file"
+                                            accept="image/png,image/jpeg,image/webp"
+                                        />
+                                    </div>
+                                    <label class="check"
+                                        ><input type="checkbox" checked /> Show
+                                        on portfolio</label
+                                    >
+                                    <div class="form_actions">
+                                        <button class="button" type="button">
+                                            Save changes</button
+                                        ><button
+                                            class="button button_light"
+                                            type="reset"
+                                        >
+                                            Reset form
+                                        </button>
+                                    </div>
+                                    <button class="delete_button" type="button">
+                                        Delete project
+                                    </button>
+                                </form>
+                            </details>
+                        </article>
+                        <article class="project_card">
+                            <img
+                                src="assets/img/project1.png"
+                                alt="orfarm project preview"
+                            />
+                            <div class="project_info">
+                                <span class="project_number">PROJECT 05</span>
+                                <h3>Orfarm</h3>
+                            </div>
+                            <details>
+                                <summary>Edit project</summary>
+                                <form>
+                                    <div class="field">
+                                        <label for="project-name-5"
+                                            >Image label</label
+                                        >
+                                        <input
+                                            id="project-name-5"
+                                            type="text"
+                                            value="orfarm"
+                                        />
+                                    </div>
+                                    <div class="field">
+                                        <label for="project-link-5"
+                                            >GitHub link</label
+                                        >
+                                        <input
+                                            id="project-link-5"
+                                            type="url"
+                                            value="https://github.com/BaoGia171/orfarm"
+                                        />
+                                    </div>
+                                    <div class="field">
+                                        <label for="project-image-5"
+                                            >Choose a new image</label
+                                        ><input
+                                            id="project-image-5"
+                                            type="file"
+                                            accept="image/png,image/jpeg,image/webp"
+                                        />
+                                    </div>
+                                    <label class="check"
+                                        ><input type="checkbox" checked /> Show
+                                        on portfolio</label
+                                    >
+                                    <div class="form_actions">
+                                        <button class="button" type="button">
+                                            Save changes</button
+                                        ><button
+                                            class="button button_light"
+                                            type="reset"
+                                        >
+                                            Reset form
+                                        </button>
+                                    </div>
+                                    <button class="delete_button" type="button">
+                                        Delete project
+                                    </button>
+                                </form>
+                            </details>
+                        </article>
+                        <article class="project_card">
+                            <img
+                                src="assets/img/project3.png"
+                                alt="delici project preview"
+                            />
+                            <div class="project_info">
+                                <span class="project_number">PROJECT 06</span>
+                                <h3>Delici</h3>
+                            </div>
+                            <details>
+                                <summary>Edit project</summary>
+                                <form>
+                                    <div class="field">
+                                        <label for="project-name-6"
+                                            >Image label</label
+                                        >
+                                        <input
+                                            id="project-name-6"
+                                            type="text"
+                                            value="delici"
+                                        />
+                                    </div>
+                                    <div class="field">
+                                        <label for="project-link-6"
+                                            >GitHub link</label
+                                        >
+                                        <input
+                                            id="project-link-6"
+                                            type="url"
+                                            value="https://github.com/BaoGia171/delici"
+                                        />
+                                    </div>
+                                    <div class="field">
+                                        <label for="project-image-6"
+                                            >Choose a new image</label
+                                        ><input
+                                            id="project-image-6"
+                                            type="file"
+                                            accept="image/png,image/jpeg,image/webp"
+                                        />
+                                    </div>
+                                    <label class="check"
+                                        ><input type="checkbox" checked /> Show
+                                        on portfolio</label
+                                    >
+                                    <div class="form_actions">
+                                        <button class="button" type="button">
+                                            Save changes</button
+                                        ><button
+                                            class="button button_light"
+                                            type="reset"
+                                        >
+                                            Reset form
+                                        </button>
+                                    </div>
+                                    <button class="delete_button" type="button">
+                                        Delete project
+                                    </button>
+                                </form>
+                            </details>
+                        </article>
+                    </div>
+                    <details class="add_project">
+                        <summary>Add a project</summary>
+                        <form>
+                            <div class="field">
+                                <label for="new-project-name"
+                                    >Image label</label
+                                >
+                                <input
+                                    id="new-project-name"
+                                    type="text"
+                                    value=""
+                                />
+                            </div>
+                            <div class="field">
+                                <label for="new-project-url">GitHub link</label>
+                                <input
+                                    id="new-project-url"
+                                    type="url"
+                                    value=""
+                                />
+                            </div>
+                            <div class="field">
+                                <label for="new-project-image"
+                                    >Choose a new image</label
+                                ><input
+                                    id="new-project-image"
+                                    type="file"
+                                    accept="image/png,image/jpeg,image/webp"
+                                />
+                            </div>
+                            <div class="form_actions">
+                                <button class="button" type="button">
+                                    Save changes</button
+                                ><button
+                                    class="button button_light"
+                                    type="reset"
+                                >
+                                    Reset form
+                                </button>
+                            </div>
+                        </form>
+                    </details>
+                </section>
+                <!------------- Project ---------------->
+
+                <!------------- Contact va Footer ---------------->
+                <section class="content_section" id="contact">
+                    <div class="section_heading">
+                        <div>
+                            <p class="section_label">WEBSITE CONTENT</p>
+                            <h2>Contact & footer</h2>
+                        </div>
+                    </div>
+                    <form class="card">
+                        <div class="field">
+                            <label for="contact-title">Heading</label>
+                            <input
+                                id="contact-title"
+                                type="text"
+                                value="Contact"
+                            />
+                        </div>
+                        <div class="field">
+                            <label for="contact-text"
+                                >Contact introduction</label
+                            >
+                            <textarea id="contact-text" rows="6">
+I'm eager to connect with like-minded people, learn from new experiences, and explore opportunities to grow as a developer.</textarea
+                            >
+                        </div>
+                        <div class="contact_fields">
+                            <div class="field">
+                                <label for="messenger-link"
+                                    >Messenger link</label
+                                >
+                                <input
+                                    id="messenger-link"
+                                    type="url"
+                                    value=""
+                                />
+                            </div>
+                            <div class="field">
+                                <label for="instagram-link"
+                                    >Instagram link</label
+                                >
+                                <input
+                                    id="instagram-link"
+                                    type="url"
+                                    value=""
+                                />
+                            </div>
+                            <div class="field">
+                                <label for="github-link">GitHub profile</label>
+                                <input
+                                    id="github-link"
+                                    type="url"
+                                    value="https://github.com/BaoGia171"
+                                />
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label for="footer-text">Footer text</label>
+                            <input
+                                id="footer-text"
+                                type="text"
+                                value="© 2026 Portfolio. All Rights Reserved | Code by Bảo Developer"
+                            />
+                        </div>
+                        <div class="form_actions">
+                            <button class="button" type="button">
+                                Save changes</button
+                            ><button class="button button_light" type="reset">
+                                Reset form
+                            </button>
+                        </div>
+                    </form>
+                </section>
+                <footer>© 2026 Gia Bảo Portfolio · Content management</footer>
+            </main>
+        </div>
+    </body>
+</html>
